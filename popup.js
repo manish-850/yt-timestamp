@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const s = Math.floor(seconds % 60);
 
         if (h > 0) {
-            return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            return `${h.toString().padStart(2, '0') }:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
         }
-        return `${m.toString().padStart(2, '0') }:${s.toString().padStart(2, '0')}`;
+        return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     }
 
     // Load notes
