@@ -1,0 +1,26 @@
+name: YT Timestamp Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create ZIP
+        run: |
+          zip -r yt-timestamp.zip . \
+            -x "*.git*" \
+            -x "node_modules/*"
+            -x ".github/*"
+
+      - name: Upload Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: yt-timestamp.zip
