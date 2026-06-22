@@ -15,10 +15,14 @@ jobs:
 
       - name: Create ZIP
         run: |
-          zip -r yt-timestamp.zip . \
-            -x "*.git*" \
-            -x "node_modules/*"
-            -x ".github/*"
+          zip -r yt-timestamp.zip \
+            manifest.json \
+            popup.html \
+            popup.js \
+            popup.css \
+            content.js \
+            content.css \
+            icons
 
       - name: Upload Release
         uses: softprops/action-gh-release@v2
