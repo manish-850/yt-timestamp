@@ -21,6 +21,6 @@ A small browser extension for YouTube that lets you save timestamped notes for t
 
 - Press `Ctrl + Q` to open the add-note modal from the YouTube watch page
 
-## Development
+## Installation
 
 Use the instructions in `INSTALL.md` to load the extension locally in Chrome-based browsers.
