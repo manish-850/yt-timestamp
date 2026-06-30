@@ -10,6 +10,11 @@ A small browser extension for YouTube that lets you save timestamped notes for t
 - Click a timestamp in the popup to jump to that point in the video
 - Clear all notes for the current video from the popup
 
+## Screenshots
+
+![screenshot1](./images/screenshot1.png)
+![screenshot2](./images/screenshot2.png)
+
 ## How it works
 
 - `content.js` injects a note button into the YouTube watch page controls
